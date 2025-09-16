@@ -1,0 +1,40 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.dylib
+*.egg*
+dist/
+build/
+*.log
+
+# Virtual env (big!)
+.venv/
+venv/
+env/
+ENV/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb~ 
+*.nbconvert.ipynb
+
+# OS / editors
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Project data & artifacts (generated)
+data/raw/
+data/interim/
+artifacts/
+!artifacts/.gitkeep
+
+# Native host logs
+artifacts/native_host.log
+
+# Node-like caches (if ever added)
+node_modules/

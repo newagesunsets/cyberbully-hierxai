@@ -1,0 +1,7 @@
+{
+  "name": "com.cyberxai.native",
+  "description": "CyberXAI local classifier host",
+  "path": "C:\\Users\\sayan\\OneDrive\\Documents\\Projects\\cyberbully-hierxai\\native_host\\host.bat",
+  "type": "stdio",
+  "allowed_origins": ["chrome-extension://kkjamdcbmhdkfhnhloamealinbfelbnp/"]
+}

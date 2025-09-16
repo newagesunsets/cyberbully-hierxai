@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "CyberXAI Detector",
+  "version": "0.1.0",
+  "description": "Detect cyberbullying in selected text or the current page using your local model.",
+  "permissions": ["contextMenus", "scripting", "activeTab", "storage", "notifications", "nativeMessaging"],
+  "host_permissions": ["<all_urls>"],
+  "background": { "service_worker": "background.js" },
+  "action": { "default_popup": "popup.html", "default_title": "CyberXAI" },
+  "icons": { "128": "icon128.png" },
+  "content_scripts": [{
+    "matches": ["<all_urls>"],
+    "js": ["contentScript.js"],
+    "css": ["overlay.css"],
+    "run_at": "document_idle",
+    "all_frames": true
+  }]
+}
